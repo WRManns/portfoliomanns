@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+a {
+  color: rgb(194, 204, 204);
+  background-color: #0b1b2b;
+  text-decoration: none;
+}
 
 header {
     display: flex;
@@ -34,37 +39,56 @@ header {
     padding-right: 2rem;
   }
 
-  main {
+main {
     border-style: solid;
     border-color: black;
   }
 
-  .About-Me {
-    width: 75%;
+  #about-me {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 15rem;
-    justify-content: start;
+    justify-content: space-between;
     border-style: solid;
     border-bottom-color: black;
   }
 
-  .Work {
+     #about-me p {
+       width: 50%;
+   }
+
+      #pro-pic {
+        height: 18rem;
+        width: 30rem;    
+        margin: 1rem;
+    }
+
+  #work {
     margin-top: 15rem;
     display: flex;  
     flex-wrap: wrap;
     justify-content: center;
     
   }
-  .Work div img {
-      height: 18rem;
-      width: 30rem;    
-      margin: 1rem;
-  }
 
-  .Contact {
+    #work div h2 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0rem;
+   }
+
+      #work div img {
+        height: 18rem;
+        width: 30rem;    
+       margin: 1rem;
+       padding: 1rem;
+     }
+
+  #contact {
     margin-top: 15rem;    
   }
 
-    .Contact ul {
+    #contact ul {
         justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
@@ -72,11 +96,16 @@ header {
         border-top-color: black;
         padding-top: 1rem;
   }
-      .Contact ul li {
-        list-style: none;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        #contact ul li {
+          list-style: none;
+          padding-left: 3rem;
+          padding-right: 3rem;
       }
-  .Resume{
-
-  }
+ 
+      @media screen and (max-width: 1070px) {
+        #about-me p {
+          width: 100%;
+        }
+      }
+      
+         
