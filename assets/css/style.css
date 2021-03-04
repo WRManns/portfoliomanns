@@ -1,8 +1,0 @@
-* {
-    box-sizing: border-box;
-    display: flex;
-}
-
-nav {
-    align-content: flex-end;
-}

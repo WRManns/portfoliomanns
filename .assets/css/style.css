@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    background: #2770b4;
+  }
+
+.name-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: #13293d;
+    color: #fff;
+  }
