@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    background-color: #818e9b;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+a {
+  color: rgb(194, 204, 204);
+  background-color: #0b1b2b;
+  text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b1b2b;
+    color: rgb(194, 204, 204);
+  }
+
+  header h1{
+    margin-left: .5rem;
+    background-color: #0b1b2b;
+  }
+
+  header nav{
+    background: #0b1b2b;
+    justify-content: end;
+    }
+
+  header nav ul{
+    background: #0b1b2b;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+  header nav ul li {
+    background: #0b1b2b;
+    list-style: none;
+    padding-right: 2rem;
+  }
+
+main {
+    border-style: solid;
+    border-color: black;
+  }
+
+  #about-me {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15rem;
+    justify-content: space-between;
+    border-style: solid;
+    border-bottom-color: black;
+  }
+
+     #about-me p {
+       width: 50%;
+   }
+
+      #pro-pic {
+        height: 18rem;
+        width: 30rem;    
+        margin: 1rem;
+    }
+
+  #work {
+    margin-top: 15rem;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+    #work div h2 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0rem;
+   }
+
+      #work div img {
+        height: 18rem;
+        width: 30rem;    
+       margin: 1rem;
+       padding: 1rem;
+     }
+
+  #contact {
+    margin-top: 15rem;    
+  }
+
+    #contact ul {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        border-top-style: solid;
+        border-top-color: black;
+        padding-top: 1rem;
+  }
+        #contact ul li {
+          list-style: none;
+          padding-left: 3rem;
+          padding-right: 3rem;
+      }
+ 
+      @media screen and (max-width: 1070px) {
+        #about-me p {
+          width: 100%;
+        }
+      }
+      
+         
