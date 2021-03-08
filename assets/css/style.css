@@ -57,7 +57,7 @@ main {
   #about-me {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15rem;
+    margin-top: 10rem;
     justify-content: space-between;
     border-top-style: solid;
     border-bottom-style: solid;
@@ -83,6 +83,8 @@ main {
     justify-content: center;
     width: 100%;
     height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   #showcase-app h2 {
     display: flex;
@@ -125,8 +127,8 @@ main {
    }
 
       #work div img {
-        height: 18rem;
-        width: 30rem;    
+        height: 15rem;
+        width: 25rem;    
        margin: 1rem;
        padding: 1rem;
      }

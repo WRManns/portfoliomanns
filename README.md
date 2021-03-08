@@ -14,3 +14,7 @@ Made the 'Showcase Application' behave like a banner on top of the other project
 Added a placeholder section for resume
 
 Made 'Contact' clickable links
+
+
+Link to page: https://wrmanns.github.io/portfoliomanns/
+
