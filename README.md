@@ -18,3 +18,4 @@ Made 'Contact' clickable links
 
 Link to page: https://wrmanns.github.io/portfoliomanns/
 
+![screenshot1](\screenshots\screenshot1.PNG)
