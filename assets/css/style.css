@@ -1,15 +1,23 @@
+/*/Setting font and box-sizing for page /*/
 * {
     box-sizing: border-box;
     background-color: #818e9b;
     font-family: Arial, Helvetica, sans-serif;
   }
 
-a {
+  
+ header nav a:hover {
+    font-size: 110%;
+  }
+
+  /*/ setting Link font color in nav bar/*/
+header nav a {
   color: rgb(194, 204, 204);
   background-color: #0b1b2b;
   text-decoration: none;
 }
 
+/*/ setting the header to hold my name and nav links on opposite ends of page/*/
 header {
     display: flex;
     justify-content: space-between;
@@ -44,27 +52,66 @@ main {
     border-color: black;
   }
 
+  /*/ this will contain the About me section. when screen is large enough, the profile picture and
+  'About Me' text will appear next to each other/*/
   #about-me {
     display: flex;
     flex-wrap: wrap;
     margin-top: 15rem;
     justify-content: space-between;
-    border-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
     border-bottom-color: black;
   }
 
      #about-me p {
+      margin-left:.5rem;
        width: 50%;
    }
 
-      #pro-pic {
-        height: 18rem;
-        width: 30rem;    
+      #pro-pic {   
         margin: 1rem;
-    }
+        padding: .5rem;
+   }
 
+   /*/setting up the 'Showcase Application'. It will behave like a banner on top of the rest of the projects/*/
+  #showcase-app {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  #showcase-app h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0rem;
+ }
+
+ /*/Using the max-width in rem to cause 'Showcase App' to gown and shrink in a banner-like style no matter
+ how page is viewed/*/
+
+ #showcase-app a {
+  flex-grow: 1 1 0;
+  display: flex;
+  justify-content: center;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+  height: auto;
+ }
+
+  #showcase-app a img {
+    width: 100%;
+   height: auto;
+  }
+ /*/ Display of screenshots to showcase projects. Displayed as a grid when screen is large enough.
+ turns to a column display when the screen is smaller./*/
   #work {
-    margin-top: 15rem;
+    margin-top: 1rem;
     display: flex;  
     flex-wrap: wrap;
     justify-content: center;
@@ -84,9 +131,17 @@ main {
        padding: 1rem;
      }
 
+    #resume {
+      margin-top: 10rem;
+      padding: 1rem;
+    }
+
+     /*/Contact links will provide ease of contacts. Behaves like a banner above the footer./*/
   #contact {
     margin-top: 15rem;    
-  }
+    }
+
+
 
     #contact ul {
         justify-content: space-between;
@@ -101,11 +156,47 @@ main {
           padding-left: 3rem;
           padding-right: 3rem;
       }
+
+        #contact ul li a {
+          color: black;
+          text-decoration: none;
+        }
+
+        #contact a:hover {
+          font-size: 110%;
+        }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
  
       @media screen and (max-width: 1070px) {
         #about-me p {
           width: 100%;
+          
         }
       }
-      
-         
+
+      @media screen and (max-width: 790px) {
+        header nav ul {
+          justify-content: flex-start;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+
+        header nav ul li {
+          padding: .5rem;
+        }
+
+        @media screen and (max-width: 620px) {
+        #contact ul {
+          flex-direction: column;
+          justify-content: center;
+        }
+        
+        #contact ul li{
+          padding:.25rem;
+        }
+      }
+    }
