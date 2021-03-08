@@ -18,4 +18,7 @@ Made 'Contact' clickable links
 
 Link to page: https://wrmanns.github.io/portfoliomanns/
 
-![screenshot1](./screenshots/screenshot1.PNG)git
+![screenshot1](./screenshots/screenshot1.PNG)
+![screenshot2](./screenshots/screenshot2.PNG)
+![screenshot3](./screenshots/screenshot3.PNG)
+![screenshot4](./screenshots/screenshot4.PNG)
