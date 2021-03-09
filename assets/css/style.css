@@ -110,6 +110,10 @@ main {
     width: 100%;
    height: auto;
   }
+
+  #showcase-app img:hover {
+    opacity: .4;
+  }
  /*/ Display of screenshots to showcase projects. Displayed as a grid when screen is large enough.
  turns to a column display when the screen is smaller./*/
   #work {
@@ -131,6 +135,11 @@ main {
         width: 25rem;    
        margin: 1rem;
        padding: 1rem;
+     }
+
+     #work div img:hover {
+       opacity: .4;
+        
      }
 
     #resume {
